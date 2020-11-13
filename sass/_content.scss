@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     color: $very-dark-blue;
-    padding: 6rem 0;
+    padding: 6rem 0 3rem 0;
 
     &__1 {
         font-weight: 600;
@@ -29,3 +29,63 @@
     }
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    column-gap: 3rem;
+}
+
+.card {
+    display: block;
+    background-color: white;
+    width: 35rem;
+    height: 20rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    margin: 1.5rem 0;
+    border-radius: 5px;
+    color: $very-dark-blue;
+
+    &__heading {
+        padding: 3rem 3rem 0 3rem;
+        font-size: 2rem;
+    }
+
+    &__paragraph {
+        padding: 1rem 3rem;
+        font-size: 1.3rem;
+        opacity: 50%;
+    }
+
+    &__icon {
+        display: block;
+        float: right;
+        padding-right: 3rem;
+    }
+
+    &--cyan {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 2;
+        border-top: 5px solid $cyan;
+    }
+
+    &--red {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 2;
+        border-top: 5px solid $red;
+    }
+
+    &--yellow {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 2;
+        border-top: 5px solid $yellow;
+    }
+
+    &--blue {
+        grid-column: 3 / span 1;
+        grid-row: 2 / span 2;
+        border-top: 5px solid $blue;
+    }
+}

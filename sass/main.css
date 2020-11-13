@@ -31,7 +31,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #4c4e61;
-  padding: 6rem 0;
+  padding: 6rem 0 3rem 0;
 }
 
 .heading__1 {
@@ -55,5 +55,91 @@ body {
   width: 35vw;
   margin-top: 1rem;
   opacity: 50%;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (min-content)[3];
+      grid-template-columns: repeat(3, -webkit-min-content);
+      grid-template-columns: repeat(3, min-content);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+}
+
+.card {
+  display: block;
+  background-color: white;
+  width: 35rem;
+  height: 20rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  color: #4c4e61;
+}
+
+.card__heading {
+  padding: 3rem 3rem 0 3rem;
+  font-size: 2rem;
+}
+
+.card__paragraph {
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  opacity: 50%;
+}
+
+.card__icon {
+  display: block;
+  float: right;
+  padding-right: 3rem;
+}
+
+.card--cyan {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+  border-top: 5px solid #45d3d3;
+}
+
+.card--red {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+  border-top: 5px solid #ea5353;
+}
+
+.card--yellow {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3 / span 2;
+  border-top: 5px solid #fcaf4a;
+}
+
+.card--blue {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / span 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+  border-top: 5px solid #549ef2;
 }
 /*# sourceMappingURL=main.css.map */
